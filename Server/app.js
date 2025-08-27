@@ -18,11 +18,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-const corsOption = {
-    origin: ["https://kaam-mila-bptn.vercel.app"],
-    credentials: true
-};
-app.use(cors(corsOption));
+import cors from "cors";
+
+app.use(cors({
+  origin: ["http://localhost:5173", "https://kaammila.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 
 
 // Connect to MongoDB before starting server
