@@ -51,3 +51,5 @@ connectDB().then(() => {
 }).catch(err => {
     console.error('DB connection failed:', err);
 });
+
+app.options("*", cors());
