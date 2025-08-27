@@ -21,10 +21,14 @@ app.use(cookieParser());
 import cors from "cors";
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://kaammila.vercel.app"],
+  origin: [
+    "http://localhost:5173",           // for local development
+    "https://kaam-mila-yoyo.vercel.app" // your deployed frontend
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 
 
 
