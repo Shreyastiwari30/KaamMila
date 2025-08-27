@@ -23,7 +23,7 @@ import cors from "cors";
 app.use(cors({
   origin: [
     "http://localhost:5173",           // for local development
-    "https://kaam-mila-yoyo.vercel.app" // your deployed frontend
+    "https://kaam-mila-yoyo-4aiug1fe3-shreyastiwari30s-projects.vercel.app" // your deployed frontend
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
